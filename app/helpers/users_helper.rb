@@ -163,7 +163,12 @@ module UsersHelper
   protected
 
     def json_user
-      { :id => current_user.id, :username => current_user.login, :splash_screen => current_user.splash_screen }.to_json
+      {
+        :id => current_user.id,
+        :username => current_user.login,
+        :splash_screen => current_user.splash_screen,
+        :first_day_of_week => current_user.first_day_of_week
+      }.to_json
     end
 
     def json_people
