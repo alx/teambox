@@ -1356,13 +1356,10 @@ es:
     observer: observador
     participant: participante
   search: 
-    index: 
-      report: "Se han encontrado %{count} resultados para \"%{term}\""
-      search_again: "Buscar de nuevo"
-      title: "Buscando en todos los proyectos"
-      title_in_project: "Buscando en el proyecto: %{project}"
     placeholder: "Búsqueda en todos los proyectos"
-    placeholder_in_project: "Búsqueda en un proyecto"
+    close_search: Cerrar búsqueda
+    results_for: Resultados para %{search_terms}
+    found_results: Hemos encontrado %{length} resultados
     submit: Buscar
   sessions: 
     fields: 
