@@ -75,3 +75,8 @@ document.on('click', '.nav_links .el', function(e,el) {
   if (e.isMiddleClick()) return
   NavigationBar.toggleElement(el, true) && e.stop()
 })
+
+document.on('click', '.nav_links .el#my_projects', function(e,el) {
+  e.stop()
+  Projects.showAllProjects()
+})

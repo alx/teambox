@@ -556,7 +556,6 @@ en:
       instructions_html: "These are the projects for this organization. If you're an admin, you can transfer a project to <a href='%{organizations_link}'>other organizations</a> by opening the project's settings."
     active_projects:
       title: Active projects
-      role_html: "you're an <strong>%{role}</strong>"
       settings: settings
       no_active_projects: There are no active projects in this organization.
       dont_belong: You're not part of this project

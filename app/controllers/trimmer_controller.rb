@@ -79,7 +79,7 @@ class TrimmerController < ActionController::Base
     render :js => templates_to_js(:locale => params[:locale])
   end
 
-  KEYS = ["*.date", "*.datetime", "*.calendar", "*.time", "*.comments.new.assigned_to_nobody"]
+  KEYS = ["*.date", "*.datetime", "*.calendar", "*.time", "*.comments.new.assigned_to_nobody", "*.roles"]
 
   def translations
     render :js => translations_to_js(:locale => params[:locale], :only => KEYS)
