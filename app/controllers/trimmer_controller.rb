@@ -76,19 +76,19 @@ class TrimmerController < ActionController::Base
   caches_page :resources
 
   def templates
-    render :js => templates_to_js(:locale => params[:locale])
+    render :text => templates_to_js(:locale => params[:locale]), :content_type => 'text/javascript'
   end
 
   KEYS = ["*.date", "*.datetime", "*.calendar", "*.time", "*.comments.new.assigned_to_nobody", "*.roles"]
 
   def translations
-    render :js => translations_to_js(:locale => params[:locale], :only => KEYS)
+    render :text => translations_to_js(:locale => params[:locale], :only => KEYS), :content_type => 'text/javascript'
   end 
 
   # Exports templates and translations in a single request
   def resources
-    render :js => translations_to_js(:locale => params[:locale], :only => KEYS) + "\n" +
-                  templates_to_js(:locale => params[:locale])
+    render :text => translations_to_js(:locale => params[:locale], :only => KEYS) + "\n" +
+                    templates_to_js(:locale => params[:locale]), :content_type => 'text/javascript'
   end
 
   protected
