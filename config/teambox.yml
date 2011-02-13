@@ -5,7 +5,7 @@
 # Configuration shared between all environments:
 defaults: &defaults
   # The domain from where your app is served
-  app_domain: localhost
+  app_domain: teambox.tetalab.org
 
   # How many activities should activity feeds display?
   activities_per_page: 25
@@ -48,7 +48,7 @@ defaults: &defaults
 
   # Default language in which the app is displayed.
   # See translations in "config/locales/"
-  default_locale: :en
+  default_locale: :fr
 
   # By default, emails are sent in production but not in development
   allow_outgoing_email: true
@@ -57,12 +57,9 @@ defaults: &defaults
   # With Heroku and the Sendgrid add-on, no configuration is needed here.
   #   $ heroku addons:add sendgrid:free
   smtp_settings:
-    :domain:         domain.com         # the domain your emails will come from
-    :address:        smtp.sendgrid.net  # SMTP server used to send emails
+    :domain:         tetalab.org  # the domain your emails will come from
+    :address:        localhost    # SMTP server used to send emails
     :port:           25
-    :authentication: :plain
-    :user_name:      USER
-    :password:       PASSWORD
 
     # Set to true when using Gmail
     :enable_starttls_auto: false
@@ -132,6 +129,6 @@ test: &test
   asset_max_file_size: 1
   amazon_s3: false
   smtp_settings:
-    :domain: domain.com
+    :domain: tetalab.org
 cucumber:
   <<: *test
