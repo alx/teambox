@@ -308,7 +308,9 @@ fr:
       close: Fermer
       preview: Aperçu
       showing: "..."
-  common: 
+  common:
+    format_name: "%{first_name} %{last_name}" 
+    format_name_short: "%{first_name_first_character}. %{last_name}"
     accept: Accepter
     and: et
     calendar: Calendrier
@@ -333,6 +335,9 @@ fr:
     tasks: 
       one: "1 tâche"
       other: "%{count} tâches"
+    gantt_chart: Diagramme de Gantt
+    signup: "Se connecter"
+    logged_out: "Vous êtes déconnectés"
   confirm: 
     delete_group: "Êtes-vous sûr de vouloir supprimer ce groupe?"
     delete_page: "Êtes‑vous sûr de vouloir supprimer cette page?"
@@ -1307,27 +1312,27 @@ fr:
       subscribe_to_calendars: "S'abonner aux calendriers..."
       subscribe_to_feeds: "S'abonner aux flux..."
     navigation: 
-      recent_activity: Activité récente
+      recent_activity: "Activités récentes"
       all_projects: Projets
       show_all_projects: Montrer tous les projets
       new_project: +
       conversations: Conversations
       welcome: Bienvenue
-      tasks: Tâches
+      tasks: "Tâches"
       time: Time tracking
       pages: Pages
       files: Fichiers
       settings: Options
       people: "Utilisateurs & Permissions"
-      my_tasks: Mes Tâches
+      my_tasks: "Mes Tâches"
       open_my_tasks: Ouvrir toutes mes taches
-      show_all_tasks: Voir toutes les tâches dans mes projets...
+      show_all_tasks: "Voir toutes les tâches dans mes projets..."
       organizations: Organisations
       show_all_organizations: "Gérer les organisations..."
       gantt_and_calendars: Gantts et calendriers
-      show_more: Montrer plus
-      show_less: Montrer moins
-      affiliate: Zone Affiliés
+      show_more: Voir plus
+      show_less: Voir moins
+      affiliate: "Zone Affiliés"
     project_navigation: 
       all_conversations: "Mes conversations"
       all_pages: "Mes pages"
@@ -1388,6 +1393,7 @@ fr:
       plans_and_billing: "Plans et facturation"
       profile_information: "Information de contact"
       profile_picture: Image
+      your_data: Import / Export
     watchers: 
       nobody_watching: "Personne ne suit les changements de cet élément"
       people_watching: "Qui suivent cet élément: "
@@ -1665,6 +1671,7 @@ fr:
       language: Langue
       last_name: Nom
       login: "Nom d’utilisateur"
+      betatester: Utiliser la version beta (moins stable).
       monday: Lundi
       new: 
         use_this_email: "Vous avez été invité(e) à utiliser Teambox avec cette adresse email. Si vous voulez accéder aux projets de la personne qui vous a invité(e), ne changez pas l’adresse email. Vous pourrez changer d’adresse email par la suite, une fois enregistré(e) dans Teambox."
@@ -1672,12 +1679,21 @@ fr:
         notify_conversations: "Envoyez‑moi une notification lorsque je regarde une conversation"
         notify_tasks: "Envoyez‑moi une notification lorsque je regarde une tâche"
         wants_task_reminder: "Envoyez‑moi une notification journalière de mes tâches"
+        clarification: "Quand quelqu'un vous mentionne (avec '@%{login}' ou '@all') dans une conversation ou une tâche, vous serez notifié et ajouté au suivi de cet élément."
       password: "Mot de passe"
       password_confirmation: "Confirmer le mot de passe"
       phone: "Numéro de téléphone"
       phone_for_integration: "Optionnel. Pour la mise en place des SMS dans le futur"
       sunday: Dimanche
       time_zone: "Fuseau horaire"
+      picture:
+        field: Nouvel Avatar
+        presence: "Vous ne pouvez pas charger un fichier vide"
+        max_size: "La taille du fichier ne peut dépasser %{mb}"
+        we_have_this_avatar_html: "Votre avatar actuel:"
+        gravatar_in_use_html: "Nous n'avons pas d'avatar pour vous, donc nous utilisons %{gravatar}."
+        upload_here_or_at_gravatar_html: "Vous pouvez choisir de charger une photo ou d'en mettre une sur %{gravatar}."
+        destroy: "Effacer l'avatar"
       tooltips: 
         email: "Utilisez une adresse courriel fonctionnelle. Sinon, vos collègues ne pourront pas vous contacter."
         first_name: "Jusqu’à 20 caractères."
@@ -1765,3 +1781,43 @@ fr:
     error: "trop court"
     strong: fort
     weak: faible
+  teambox_datas:
+    new_import:
+      title: "Importer"
+      submit: Importer
+    import_fields:
+      select_file: "Veuillez hoisir le fichier contenant vos données"
+      service: "Depuis quel service avez-vous exporté vos données?"
+      please_supply_user_map: "Nous avons détecté ces utilisateur dans votre importation. Merci de confirmer la correspondance avec les utilisateurs actuels de Teambox."
+      in_organization: "Mettre tous les projets dans cette organisation"
+      user: Utilisateur
+      teambox_user: Utilisateur Teambox
+    new_export:
+      title: "Exporter"
+      submit: Exporter
+    export_fields:
+      description: "Veuillez sélectionner les projets que vous voulez exporter."
+    index:
+      title: "Importer ou exporter vos données"
+      imports: "Importer des données depuis un fichier"
+      imports_explain: "Vous pouvez importer des fichiers de backup Teambox, ou des projets Basecamp."
+      exports: "Exporter vos projets"
+      no_imports: "Il n'y a pas d'importation récente."
+      no_exports: "Il n'y a pas d'exportation récente."
+    show_export:
+      title: "Importer / Exporter"
+      projects: "Projets exportés:"
+      download: "Télécharger exportation"
+    data:
+      processing: "Processus en cours..."
+      processed_at: "Processus à %{processed_at}"
+      incomplete: "Plus d'informations nécessaire."
+      remove: "Effacer"
+      confirm_delete: "Êtes-vous sûr de vouloir effacer ces données?"
+    show_import:
+      title: "Importer"
+      submit: Importer
+      projects: "Projets importés"
+      import_error: "Il y a eu une erreur pendant le chargement de l'importation. Merci de ré-essayer."
+    column:
+      description: "Ici, vous pouvez importer et exporter vos données de Teambox."
