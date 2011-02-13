@@ -1919,10 +1919,10 @@ fr:
       link_hover_colour: "couleur des liens survolés par défaut"
       text_colour: "couleur du texte par défaut"
       header_bar_colour: couleur de la barre de titre
-      description_html: "HTML à afficher sur la page d'acceuil <a href="http://help.teambox.com/faqs/more-ways-to-access-teambox/customize-organizations">Apprenez à l'utiliser</a>"
+      description_html: "HTML à afficher sur la page d'acceuil <a href='http://help.teambox.com/faqs/more-ways-to-access-teambox/customize-organizations'>Apprenez à l'utiliser</a>"
     index:
       about:
-        title: A propos des Organisations
+        title: "A propos des Organisations"
         explain1: "Une organisation vous permet de créer des groupes de projets et d'utilisateurs sous le même nom de société."
         explain2: "Vous pouvez les lier à votre propre domaine afin de customiser votre espace Teambox. Utilisez votre propre logo et page d'acceuil, et partagez le avez vos clients."
       new:
