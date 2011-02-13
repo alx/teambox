@@ -1912,8 +1912,8 @@ fr:
       permalink_html: "Code court de l'organisation <em>Pas d'espace. Sera utilisé pour l'url du site.</em>
       domain_html: "Domaine <em>Vous pouvez utiliser votre propre domaine pour le site de l'organistion, vérifiez la <a href='http://help.teambox.com/faqs/more-ways-to-access-teambox/custom-domain' title='How to use your own domain for your organization in Teambox'>documentation</a>.</em>"
     appearance_fields:
-      colours: Couleurs du site
-      logo_html: "Logo <em>De préférence au format 134x36 pixels</em>"
+      colours: "Couleurs du site"
+      logo_html: "Logo <em>de préférence au format 134x36 pixels</em>"
       links_colour: "couleur des liens par défaut"
       highlight_colour: couleur de surlignage
       link_hover_colour: "couleur des liens survolés par défaut"
@@ -1933,10 +1933,10 @@ fr:
     not_in_community: "La version communautaire ne supporte pas les organisations multiples"
     new:
       title: Nouvelle Organisation
-      explain: Organisez vos utilisateurs et vos projets à l'intérieur de l'organisation.
-      submit: Créér une Organisation
-      created: Votre organisation a été créée!
-      invalid_organization: Organisation invalide, corrigez les erreurs et recommencez.
+      explain: "Organisez vos utilisateurs et vos projets à l'intérieur de l'organisation."
+      submit: "Créér une Organisation"
+      created: "Votre organisation a été créée!"
+      invalid_organization: "Organisation invalide, corrigez les erreurs et recommencez."
     organization:
       you_are_html: "Vous êtes un <strong>%{role}</strong> dans cette organisation"
       admin: administrateur
@@ -1944,12 +1944,12 @@ fr:
       external: travailleur externe
       number_of_projects:
         one: Un projet
-        other: %{count} projets
+        other: "%{count} projets"
       more_users: "et %{count} utilisateurs de plus"
       your_plan_is: "Votre Formule: %{plan}"
       upgrade: "Mettre à jour votre Formule!"
     projects:
-      title: Projets dans %{organization}
+      title: "Projets dans %{organization}"
       new_project: Nouveau projet
       instructions_html: "Ceci est la liste des projets de votre organisation. Si vous être administrateur, vous pouvez transferer les projets à une <a href='%{organizations_link}'>autre organisation</a> en ouvrant les options du projet."
     active_projects:
