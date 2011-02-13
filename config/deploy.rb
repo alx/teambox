@@ -7,7 +7,6 @@ set :application, "teambox"
 
 set :deploy_to,   "/var/app/#{application}"
 set :user,        "alex"
-set :port,        22104
 
 set :scm,               :git
 set :repository,        "git@github.com:alx/teambox.git"
