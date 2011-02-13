@@ -1290,12 +1290,13 @@ fr:
       support: "Un problème? Envoyez‑nous un feedback !"
     gantt_banner_primer: 
       title: "Il n’y a pas de listes de tâches dues à afficher sur le diagramme de Gantt"
-    global_navigation: 
+    global_navigation:
       home: Accueil
       login: Login
       logout: Quitter
       project_invitations: "Invitations (%{count})"
       settings: Options
+      help: Aide
     instructions: 
       send_email: "Envoyez un nouveau commentaire par courriel..."
       send_email_conversations: "Envoyez une nouvelle conversation par courriel..."
@@ -1316,7 +1317,7 @@ fr:
       time: Time tracking
       pages: Pages
       files: Fichiers
-      settings: Configuration
+      settings: Options
       people: "Utilisateurs & Permissions"
       my_tasks: Mes Tâches
       open_my_tasks: Ouvrir toutes mes taches
