@@ -1165,8 +1165,15 @@ fr:
       confirm_delete: "Êtes‑vous certain de vouloir supprimer définitivement ce projet? Le project sera effacé pour toujours, vous ne pourez plus y accèder. Si vous voulez conserver votre projet, utilisez plutôt 'Archiver ce Projet'."
       forever: "Supprimer ce projet de façon définitive"
       name: Nom
+      name_html: "Nom du Projet <em>Rester court et descriptif, par exemple: Tetalab Novela.</em>"
+      name_example: Nom du Projet
+      extra_options: "Plus d'options"
       new: 
         time_tracking_docs: "En savoir plus."
+        choose_organization:
+          new_org_name_html: "Nom de l'organisation <em>Vous pourrez ensuite ajouter plus de projets dans la même organisation</em>"
+          choose_org_html: "Organisation <em>A quelle origanisation appartient ce projet?</em>"
+          or_create_a_new_org_html: "ou créer une <a href='%{link}'>nouvelle organisation</a>"
       owner: Propriétaire
       owner_description: "Le propriétaire du projet est la seule personne qui peut modifier les paramètres de ce projet. Une fois que vous aurez transférer le projet à quelqu’un d’autre, vous ne serez plus autorisé à modifier certain paramètres du projet."
       permalink_html: Lien permanant
@@ -1184,7 +1191,9 @@ fr:
         description: "Activitées dans tous vos projets"
         title: Teambox
       subscribe: "Souscrivez au fil d’activitées"
-    new: 
+    new:   
+      explain1_html: "Un projet est un groupe partagé avec votre équipe. Utilisez-le pour vos suivre vos conversations, créer des listes de tâches et échanger des fichiers."
+      explain2_html: "Vous pouvez créer un projet pour chaque domaine: Développement, Vente, projets clients, etc."
       active_projects: 
         one: "Vous avez un projet actif."
         other: "Vous avez %{count} projets actifs."
@@ -1198,6 +1207,7 @@ fr:
       not_allowed: "Vous ne pouvez pas à créer des projets avec votre compte actuel."
       submit: "Créer un projet et commencer à inviter des utilisateurs"
       title: "Créer un projet"
+      sending: Création du projet...
       upgrade: 
         to_2_html: "<a href='%{link}'>Abonnez vous maintenant</a> pour créer <b>plus de %{projects} projets<b>, stocker <b>%{storage} Gb<b> de fichiers et utilisez la <b>barre de recherches à travers tous vos projets<b>."
       you_can_create_more: 
@@ -1445,16 +1455,23 @@ fr:
       task_list: "Une liste de tâches définit une étape importante pour votre projet. L’intérieur d’une liste de tâches, vous pouvez créer des tâches et les assigner à des personnes."
       title: "Nouvelle tâche"
     filter: 
+      filter_tasks: "Filtrer les tâches"
+      by_name: Par nom...
       anybody: "N'importe qui"
-      anytime: "N'importe quand"
-      assigned_to: "Afficher les tâches assignées à..."
-      due_date: "Afficher les tâches à accomplir pour la date..."
-      late_tasks: "Tâches en retard"
       my_tasks: "Mes tâches"
+      unassigned: "Tâches non assignées"
+      anytime: "N'importe quand"
+      late_tasks: "Tâches en retard"
       no_date_assigned: "Pas de date définie"
       today: Aujourd'hui
       tomorrow: Demain
-      unassigned: "Tâches non assignées"
+      week: "Cette semaine"
+      2weeks: "Les 2 prochaines semaines"
+      3weeks: "Les 3 prochaines semaines"
+      month: "Dans le mois"
+      hide: Cacher
+      assigned_to: "Afficher les tâches assignées à..."
+      due_date: "Afficher les tâches à accomplir pour la date..."
     gantt_view: 
       back_to_normal_view: "Retournez à en vue normale"
       view_for_all_projects: "Voir calendrier et diagramme de Gantt pour le projet"
@@ -1470,6 +1487,7 @@ fr:
         title: "Tâches de %{name}"
       starts_on: "Débute le %{date}"
       tasks_for_all_projects: "Tâches pour tous vos projets"
+      tasks_for_all_projects_explain: "Affichage de toutes les tâches. Afin de gérer les listes de tâches et de les ré-ordonner, ouvrez les tâches de chaque projet."
       tasks_for_project: "Taches pour ce projet"
     link: 
       edit: Modifier
@@ -1821,3 +1839,137 @@ fr:
       import_error: "Il y a eu une erreur pendant le chargement de l'importation. Merci de ré-essayer."
     column:
       description: "Ici, vous pouvez importer et exporter vos données de Teambox."
+  organizations:
+    column:
+      general_settings: "Options Générales"
+      appearance: Apparence
+      admin_users: "Gérer les utilisateurs"
+      admin_projects: "Gérer les projets"
+      billing: "Formules et prix"
+      invoices: "Factures"
+      delete: "Effacer cette organisation"
+    edit:
+      title: Options pour %{organization}
+      there_are: "Ils sont"
+      number_of_users: "%{count} utilisateurs"
+      public_site: "Le site public de votre organisation: %{link}"
+      number_of_projects: "%{count} projets"
+      submit: "Sauvegarder"
+      saved: "Changements sayvegardés"
+      invalid: "Organisation invalide"
+    appearance:
+      title: Apparence pour %{organization}
+      submit: "Sauvegarder"
+    external_view:
+      create_your_own_org_html: "Cependant, vous pouvez <a href='%{link}'>créer votre propre organisation</a> pour vos projets."
+      request_permission: "Pour accéder à cette organisation, vous devez demander une autorisation d'accès à un administrateur de cette organisation:"
+      title: "%{name}"
+      you_cant_access: "Vous n'avez pas les droits d'accès ou d'écriture à cette organisation"
+    usage:
+      active_projects:
+        title: "%{now} / %{max} projets actifs"
+        explain: "Les projets archivés ou effacés ne sont pas pris en compte dans cette limite"
+      storage:
+        title: "%{now} / %{max}"
+        explain: "Fichiers attachés dans votre organisation"
+    invoices:
+      invoices: "Vos factures"
+      update_billing_details: "Mettre à jour votre adresse de facturation"
+      no_invoices: "Vous n'avez pas de facture"
+      company_name: "Nom de la Société"
+      vat: "Code TVA"
+      invoice: "Facture Teambox"
+      print: "Imprimer"
+      date: Date
+      amount: "Total"
+      company: "Société"
+      name: "Nom"
+      address: "Adresse"
+      optional: "Informations optionnelles pour la facture"
+    billing:
+      billing_email_html: "Email de facturation <em>nous enverrons les facture à cette adresse</em>"
+      submit: "Mettre à jour l'email de facturation"
+      plan: "Formule"
+      storage: "Stockage"
+      projects: Projets
+      search: "Recherche"
+      upgrade: "Mettre à jour!"
+      current_plan: "Votre formule actuelle"
+      downgrade: "utiliser cette formule"
+      cancel: "Annuler l'abonnement"
+      billing_area_html: "Vous pouvez accéder à vos factures, changer de formule ou d'option de paiement à n'importe quel moment dans la <a href='%{link}'>zone de facturation</a>."
+      suggested_upgrade:
+        upgrade_to: "Mettre à jour vers %{plan}"
+        for_only: "pour $%{price} de plus par mois"
+        get_projects_html: "Jusqu'à <b>%{number} projets</b>"
+        get_storage_html: "Jusqu'à <b>%{number}</b>"
+      yearly_plans:
+        save_with_yearly_plans_html: "<b>Gagnez 20%</b>. Vous pouvez aussi signez pour une formule a l'année et <b>obtenir 2 mois gratuits</b>."
+        signup_links_html: "Formule a l'année pour <a href='%{corporate}'>Entreprise ($2990)</a>, <a href='%{pro}'>Pro ($990)</a>, <a href='%{basic}'>Basic ($290)</a> ou <a href='%{personal}'>Personnel ($120)</a>."
+    fields:
+      name_html: "Nom de l'Organisation"
+      name_placeholder: Votre organisation
+      permalink_html: "Code court de l'organisation <em>Pas d'espace. Sera utilisé pour l'url du site.</em>
+      domain_html: "Domaine <em>Vous pouvez utiliser votre propre domaine pour le site de l'organistion, vérifiez la <a href='http://help.teambox.com/faqs/more-ways-to-access-teambox/custom-domain' title='How to use your own domain for your organization in Teambox'>documentation</a>.</em>"
+    appearance_fields:
+      colours: Couleurs du site
+      logo_html: "Logo <em>De préférence au format 134x36 pixels</em>"
+      links_colour: "couleur des liens par défaut"
+      highlight_colour: couleur de surlignage
+      link_hover_colour: "couleur des liens survolés par défaut"
+      text_colour: "couleur du texte par défaut"
+      header_bar_colour: couleur de la barre de titre
+      description_html: "HTML à afficher sur la page d'acceuil <a href="http://help.teambox.com/faqs/more-ways-to-access-teambox/customize-organizations">Apprenez à l'utiliser</a>"
+    index:
+      about:
+        title: A propos des Organisations
+        explain1: "Une organisation vous permet de créer des groupes de projets et d'utilisateurs sous le même nom de société."
+        explain2: "Vous pouvez les lier à votre propre domaine afin de customiser votre espace Teambox. Utilisez votre propre logo et page d'acceuil, et partagez le avez vos clients."
+      new:
+        create: "+ Créer une nouvelle Organisation"
+        explain: "Customiser-la avec votre propre Logo et Page d'acceuil, et créez des projets à l'intérieur."
+      title: Organisations
+    not_admin: "Vous ne pouvez pas accéder à la page de facturation car vous n'êtes pas administrateur."
+    not_in_community: "La version communautaire ne supporte pas les organisations multiples"
+    new:
+      title: Nouvelle Organisation
+      explain: Organisez vos utilisateurs et vos projets à l'intérieur de l'organisation.
+      submit: Créér une Organisation
+      created: Votre organisation a été créée!
+      invalid_organization: Organisation invalide, corrigez les erreurs et recommencez.
+    organization:
+      you_are_html: "Vous êtes un <strong>%{role}</strong> dans cette organisation"
+      admin: administrateur
+      participant: participant
+      external: travailleur externe
+      number_of_projects:
+        one: Un projet
+        other: %{count} projets
+      more_users: "et %{count} utilisateurs de plus"
+      your_plan_is: "Votre Formule: %{plan}"
+      upgrade: "Mettre à jour votre Formule!"
+    projects:
+      title: Projets dans %{organization}
+      new_project: Nouveau projet
+      instructions_html: "Ceci est la liste des projets de votre organisation. Si vous être administrateur, vous pouvez transferer les projets à une <a href='%{organizations_link}'>autre organisation</a> en ouvrant les options du projet."
+    active_projects:
+      title: Projets Actifs
+      role_html: "vous êtes un <strong>%{role}</strong>"
+      storage: "%{now} de fichiers"
+      settings: options
+      no_active_projects: "Il n'y a pas de projet actif dans votre organisation"
+      dont_belong: "Vous ne faites pas parti de ce projet."
+    archived_projects:
+      title: "Projets archivés"
+      last_activity: "Dernière activité le %{date}"
+    you_are_not_admin: "Vous n'êtes pas l'administrateur de cette organisation. Seul les administrateur peuvent modifier les options et gérer les utilisateurs."
+    delete:
+      need_to_be_admin: "Vous devez être administrateur pour effacer cette organisation"
+      not_with_projects: "Vous ne pouvez pas effacer cette organisation car elle contient encore des projets"
+      go_delete_some_projects_html: "Vous ne pouvez pas effacer une organisation qui contient encore des projets. Veuillez <a href='%{link}'>effacer ou transférer</a> tous les projets de cette organisation avant de la détruire."
+      not_paid_plan: "Vous ne pouvez pas effacer une organisation avec une formule payante."
+      go_downgrade_to_free_plan: "Vous devez vous <a href='%{link}'>désinscrire</a> de la formule payante avant d'effacer l'organisation. Bous pouvez mettre à jour votre compte vers un compte gratuit dans <a href='%{link}'>la zone de facturation</a>."
+      delete: Effacer cette organisation
+      clarification: "Si vous effacez cette organisation, toutes les informations attachées seront effacées pour toujours. Les utilisateurs de cette organisation pourront continuer à se connecter à Teambox et travailler avec leurs autres organisations."
+      confirm: "La destruction d'une organisation est irreversible et tout le contenu relatif à cette organisation sera perdu."
+      deleted: "Vous avez effacé cette organisation"
