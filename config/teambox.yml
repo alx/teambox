@@ -57,6 +57,7 @@ defaults: &defaults
   # With Heroku and the Sendgrid add-on, no configuration is needed here.
   #   $ heroku addons:add sendgrid:free
   smtp_settings:
+    :method:  :sendmail # can be ':sendmail' or ':smtp'
     :domain:         tetalab.org  # the domain your emails will come from
     :address:        localhost    # SMTP server used to send emails
     :port:           25

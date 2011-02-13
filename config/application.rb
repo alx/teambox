@@ -85,8 +85,14 @@ module Teambox
       end
 
       if allow_outgoing_email
-        action_mailer.delivery_method = :smtp
-        action_mailer.smtp_settings = smtp_settings
+        case smtp_settings[:method]
+        when :smtp
+          action_mailer.delivery_method = :smtp
+          action_mailer.smtp_settings = smtp_settings
+        when :sendmail
+          action_mailer.delivery_method = :sendmail
+          action_mailer.smtp_settings = smtp_settings
+        end
       end
 
     end
