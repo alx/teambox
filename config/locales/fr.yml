@@ -1909,7 +1909,7 @@ fr:
     fields:
       name_html: "Nom de l'Organisation"
       name_placeholder: Votre organisation
-      permalink_html: "Code court de l'organisation <em>Pas d'espace. Sera utilisé pour l'url du site.</em>
+      permalink_html: "Code court de l'organisation <em>Pas d'espace. Sera utilisé pour l'url du site.</em>"
       domain_html: "Domaine <em>Vous pouvez utiliser votre propre domaine pour le site de l'organistion, vérifiez la <a href='http://help.teambox.com/faqs/more-ways-to-access-teambox/custom-domain' title='How to use your own domain for your organization in Teambox'>documentation</a>.</em>"
     appearance_fields:
       colours: "Couleurs du site"
