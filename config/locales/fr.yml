@@ -1713,7 +1713,7 @@ fr:
       invitation_sent_to_html: "Nous avons envoyé une invitation à l’adresse <i>%{email}</i> afin de vérifier qu’il n’y a pas d’erreur dans l’adresse courriel."
       problems_html: "Si le problème persiste, n’hésitez pas à nous contacter! %{support}"
       problems_title: "Un problème?"
-      resend: "Pas de courriel de confirmation? Cliquez <a href='%{link}'>ici</a> pour recevoir un nouveau courriel de confirmation."
+      resend_html: "Pas de courriel de confirmation? Cliquez <a href='%{link}'>ici</a> pour recevoir un nouveau courriel de confirmation."
       spam: "Assurez‑vous que ce courriel n’ait pas été classé avec le courrier indésirable."
       title: "Confirmez votre adresse courriel"
       wrong_address_html: "Une erreur dans l’adresse courriel? Dans ce cas, <a href='%{link}'>annulez</a> et recommencez la création du compte avec un courriel valide."
