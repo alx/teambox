@@ -1306,9 +1306,27 @@ fr:
       subscribe_to_calendars: "S'abonner aux calendriers..."
       subscribe_to_feeds: "S'abonner aux flux..."
     navigation: 
+      recent_activity: Activité récente
       all_projects: Projets
+      show_all_projects: Montrer tous les projets
       new_project: +
+      conversations: Conversations
       welcome: Bienvenue
+      tasks: Tâches
+      time: Time tracking
+      pages: Pages
+      files: Fichiers
+      settings: Configuration
+      people: "Utilisateurs & Permissions"
+      my_tasks: Mes Tâches
+      open_my_tasks: Ouvrir toutes mes taches
+      show_all_tasks: Voir toutes les tâches dans mes projets...
+      organizations: Organisations
+      show_all_organizations: "Gérer les organisations..."
+      gantt_and_calendars: Gantts et calendriers
+      show_more: Montrer plus
+      show_less: Montrer moins
+      affiliate: Zone Affiliés
     project_navigation: 
       all_conversations: "Mes conversations"
       all_pages: "Mes pages"
