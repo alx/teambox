@@ -5,7 +5,7 @@ default_run_options[:pty] = true
 set :application, "teambox"
 
 set :deploy_to,   "/var/app/#{application}"
-set :user,        "alx"
+set :user,        "alex"
 set :port,        22104
 
 set :scm,               :git
