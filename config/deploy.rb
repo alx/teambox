@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "config/deploy/capistrano_database_yml"
 
 default_run_options[:pty] = true
 
